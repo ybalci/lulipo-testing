@@ -1,0 +1,36 @@
+name: Bug report / Hata bildirimi
+description: Report a reproducible problem in Lulipo
+title: "[Bug] "
+body:
+  - type: input
+    id: device
+    attributes:
+      label: Phone model and Android version
+      placeholder: Samsung Galaxy S24, Android 15
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Lulipo version
+      placeholder: 0.2.0-test (2)
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the level and actions that triggered the issue.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Screenshots or video
+      description: Remove personal information before attaching files.
