@@ -1,0 +1,15 @@
+name: Gameplay feedback / Oyun geri bildirimi
+description: Share feedback about difficulty, visuals or controls
+title: "[Feedback] "
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Game version and phone model
+  - type: textarea
+    id: feedback
+    attributes:
+      label: What worked well and what should change?
+      description: Tell us the level and give specific examples.
+    validations:
+      required: true
