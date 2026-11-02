@@ -6,9 +6,9 @@ Lulipo is a colorful match-3 puzzle game featuring short rounds, combos and prog
 
 ## Join the test
 
-Download **Lulipo-Android-Test.apk** from [Releases](https://github.com/ybalci/lulipo-testing/releases/tag/v0.3.0-test). Do not download APKs posted by other accounts.
+Download **Lulipo-Android-Test.apk** from [Releases](https://github.com/ybalci/lulipo-testing/releases/tag/v0.4.0-test). Do not download APKs posted by other accounts.
 
-**Current build:** 0.3.0-test (3) · Android 7.0 or later · about 6.6 MB.
+**Current build:** 0.4.0-test (4) · Android 7.0 or later · about 6.6 MB.
 
 A Google Play closed-test link is **not available yet**. Installing the GitHub APK does not enroll you in Google Play’s closed test or count toward its tester requirement.
 
@@ -24,7 +24,10 @@ This APK is signed with a development test key, not the final store signing key.
 ## What to expect
 
 - 2×2 squares create small cross-shaped blasts; L/T matches create 3×3 area bombs. Swap adjacent special tiles for a double blast.
-- 20 moves per level and 10 seconds per move; a timeout costs one move.
+- Starting moves: 20 in levels 1–5; +2 every 5 levels, capped at 30.
+- Every 10 successful player moves grants +2 moves in the same level. Invalid swaps, timeouts, tools and automatic cascades do not count.
+- 10 seconds per move; a timeout costs one move.
+- Gentler level targets (first level: 12 coffees) and fewer ice/lock obstacles.
 - New sessions start at level 1 in this prototype.
 - Rewarded ads and purchases are explicitly **demos**; no real advertising or payment occurs.
 - No login or account is required by the game. Gameplay and media are bundled for offline use.
