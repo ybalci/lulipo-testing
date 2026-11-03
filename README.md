@@ -6,9 +6,9 @@ Lulipo is a colorful match-3 puzzle game featuring short rounds, combos and prog
 
 ## Join the test
 
-Download **Lulipo-Android-Test.apk** from [Releases](https://github.com/ybalci/lulipo-testing/releases/tag/v0.4.1-test). Do not download APKs posted by other accounts.
+Download **Lulipo-Android-Test.apk** from [Releases](https://github.com/ybalci/lulipo-testing/releases/tag/v0.4.2-test). Do not download APKs posted by other accounts.
 
-**Current build:** 0.4.1-test (5) · Android 7.0 or later · about 6.6 MB.
+**Current build:** 0.4.2-test (6) · Android 7.0 or later · about 6.6 MB.
 
 A Google Play closed-test link is **not available yet**. Installing the GitHub APK does not enroll you in Google Play’s closed test or count toward its tester requirement.
 
@@ -23,11 +23,11 @@ This APK is signed with a development test key, not the final store signing key.
 
 ## What to expect
 
-- All four tiles clear in a 2×2 square or line of four; the small bomb or laser fires immediately. L/T matches create stored 3×3 area bombs. Swap adjacent special tiles for a double blast.
+- A line or square of four clears only those four tiles. L/T matches create stored 3×3 area bombs. Swap adjacent special tiles for a double blast.
 - Starting moves: 20 in levels 1–5; +2 every 5 levels, capped at 30.
 - Every 10 successful player moves grants +1 move in the same level. Invalid swaps, timeouts, tools and automatic cascades do not count.
 - 10 seconds per move; a timeout costs one move.
-- Targets and obstacle counts increased by about 10% from 0.4.0 (rounded up); first level: 14 coffees.
+- First three level targets: 18, 21 and 24. Ice/locks are spread apart; blocked obstacle progress triggers a free board rearrangement. Rare trapped layouts receive a free rainbow rescue. This does not guarantee a win within the move limit.
 - New sessions start at level 1 in this prototype.
 - Rewarded ads and purchases are explicitly **demos**; no real advertising or payment occurs.
 - No login or account is required by the game. Gameplay and media are bundled for offline use.
