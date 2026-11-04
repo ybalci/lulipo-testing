@@ -1,46 +1,62 @@
-# Lulipo: Match & Pop — Android testing
+# Lulipo: Match & Pop — Android testing / Android testi
 
 ![Lulipo](lulipo-icon-512.png)
 
-Lulipo is a colorful match-3 puzzle game featuring short rounds, combos and progressively introduced ice and lock obstacles. Turkish and English are supported.
+**[Open the optional APK test hub / APK test sayfası](https://ybalci.github.io/lulipo-testing/)**
 
-## Join the test
+Help improve Lulipo by playing naturally and reporting what you actually observe. This is a voluntary test; no positive rating, review, or purchase is required.
 
-Download **Lulipo-Android-Test.apk** from [Releases](https://github.com/ybalci/lulipo-testing/releases/tag/v0.4.2-test). Do not download APKs posted by other accounts.
+## Download the current APK
 
-**Current build:** 0.4.2-test (6) · Android 7.0 or later · about 6.6 MB.
+**[Download Lulipo 0.7.2-test for Android](https://github.com/ybalci/lulipo-testing/releases/download/v0.7.2-test/Lulipo-Android-0.7.2-Fair-Test.apk)** · Android 7.0 or later · about 6.6 MB.
 
-A Google Play closed-test link is **not available yet**. Installing the GitHub APK does not enroll you in Google Play’s closed test or count toward its tester requirement.
+Use this repository's release assets only. The [release page](https://github.com/ybalci/lulipo-testing/releases/tag/v0.7.2-test) includes release notes and SHA-256 checksums. No GitHub account is needed to download the public APK.
 
-## Install
+1. Download on your Android phone and open the APK.
+2. If Android asks, allow installation from the browser or file manager you used.
+3. Install **Lulipo · Test**. You can turn that installation permission off afterwards.
+4. Choose Turkish/English and Easy/Normal/Hard on the home screen.
 
-1. Download the APK on your Android phone.
-2. Open the download and, if Android asks, allow installation from that browser or file manager.
-3. Install **Lulipo · Test**. You may turn that installation permission off afterwards.
-4. Launch the game and choose Turkish or English using the language button.
+This APK uses the existing development test identity (com.mahalle.esles.test). Compatible earlier test installs can be updated. It is separate from the Google Play package (com.lulipogames.lulipo); it does not become a Play installation.
 
-This APK is signed with a development test key, not the final store signing key. An existing compatible test installation can be updated. Back up anything important before removing any app.
+## Google Play closed test
 
-## What to expect
+The Google Play opt-in link is **being prepared and is not live yet**. It will be shared separately when the track is ready. GitHub is not required for the Google Play test.
 
-- A line or square of four clears only those four tiles. L/T matches create stored 3×3 area bombs. Swap adjacent special tiles for a double blast.
-- Starting moves: 20 in levels 1–5; +2 every 5 levels, capped at 30.
-- Every 10 successful player moves grants +1 move in the same level. Invalid swaps, timeouts, tools and automatic cascades do not count.
-- 10 seconds per move; a timeout costs one move.
-- First three level targets: 18, 21 and 24. Ice/locks are spread apart; blocked obstacle progress triggers a free board rearrangement. Rare trapped layouts receive a free rainbow rescue. This does not guarantee a win within the move limit.
-- New sessions start at level 1 in this prototype.
-- Rewarded ads and purchases are explicitly **demos**; no real advertising or payment occurs.
-- No login or account is required by the game. Gameplay and media are bundled for offline use.
-- This is a work in progress, not a Google Play production release.
+**Downloading or installing this GitHub APK does not enroll you in Google Play's closed test and does not count toward its 12-testers / 14-days requirement.** When the Play link is available, join using your invited Google account and install from Google Play. Genuine play and feedback are welcome; do not leave an inflated rating or scripted review.
+
+## What changed in 0.7.2
+
+- Choose **Easy, Normal or Hard** before starting.
+- Easy: 120 seconds and more moves; Normal: 90 seconds; Hard: 75 seconds with the same baseline move allowance as Normal.
+- Before a new board opens, the game checks a winning path that completes color targets, the ice quota and locks without ads, purchases or boosters, with at least two initial moves spare.
+- If a generated board cannot be certified within the bounded search, a verified board is used. Certified board families can repeat. This does **not** guarantee a human finishes within the timer or wins after mistakes.
+- Language and difficulty preferences are remembered locally; a new game session begins at level 1.
+- A local English/Turkish privacy page is included.
+- Ads and purchases are explicitly **demos**. No real ad is shown and no payment is charged in this test release.
+- The Android game is bundled for offline use and does not require a player account.
 
 ## Feedback
 
-Please use **Issues → New issue** for bugs or gameplay feedback. Include your phone model, Android version, game version, steps to reproduce, and screenshots where useful. Avoid posting personal data, email addresses or credentials in public issues.
+Use **[Issues → New issue](https://github.com/ybalci/lulipo-testing/issues/new/choose)** or email **[yavuz@presult.com.tr](mailto:yavuz@presult.com.tr)**. A GitHub account is required to create an issue; email is an alternative.
 
-Focus on touch accuracy, tile visibility, difficulty, timers, combos, ice/locks, sound, and leaving/returning to the app. See [the test guide](TESTING.md).
+Include phone model, Android version, game version, chosen difficulty, reproduction steps, expected/actual behavior, and an optional screenshot. **Do not post passwords, authentication codes, private email addresses or other sensitive personal information in public issues.**
 
-![Home screen](lulipo-home-preview.png)
+See the [test guide / test rehberi](TESTING.md) and [privacy policy / gizlilik politikası](https://ybalci.github.io/lulipo-testing/privacy.html).
+
+---
+
+## Türkçe
+
+Lulipo'nun Android testine katılıp oyunu doğal şekilde oynayarak geliştirmemize yardımcı olabilirsin. **Olumlu puan, yorum veya satın alma şartı yok.**
+
+- **[İsteğe bağlı APK test sayfası](https://ybalci.github.io/lulipo-testing/)** üzerinden güncel APK'yı indir veya hata bildir.
+- Ana ekranda **Basit / Orta / Zor** seç. Basit 120 sn, Orta 90 sn, Zor 75 sn sürer. Zor mod, Orta ile aynı temel hamle hakkını korur.
+- Tahtalar, hedefleri en az iki hamle payıyla tamamlayan bir yol için denetlenir. Doğrulanamayan aday yerine doğrulanmış tahta kullanılır; tahta aileleri tekrar edebilir. Sürede yetişme ve hatasız oynama garantisi verilmez.
+- Buz/kilit hedeflerini, dokunmayı, sesleri, dili, duraklatmayı ve uygulamayı kapatıp açmayı test et.
+- Reklam ve satın almalar demodur; gerçek reklam gösterimi veya ücret yoktur.
+- **GitHub APK kurulumu, Google Play kapalı testine katılım sayılmaz.** Play bağlantısı hazır olduğunda ayrıca kayıt olup Play'den yüklemek gerekecek; GitHub hesabı gerekmez.
 
 ## Repository scope
 
-This repository contains tester documentation, promotional images and download releases. The game’s source code and licensed raw sound assets are not distributed here. No open-source license is granted for the game or its media.
+This public repository contains tester documentation, promotional images, a static test/privacy website and APK releases. It does not distribute the game's source code, signing keys, credentials, AAB upload bundles or licensed raw sound assets. No open-source license is granted for the game or its media.
